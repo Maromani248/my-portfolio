@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url(//db.onlinewebfonts.com/c/a3250cbb026ddceeadb7c0e4ad871a8d?family=Mulled+Wine+Season+Medium);
+@font-face {
+  font-family: "Mulled Wine Season Medium";
+  src: url("//db.onlinewebfonts.com/t/a3250cbb026ddceeadb7c0e4ad871a8d.eot");
+  src: url("//db.onlinewebfonts.com/t/a3250cbb026ddceeadb7c0e4ad871a8d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a3250cbb026ddceeadb7c0e4ad871a8d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a3250cbb026ddceeadb7c0e4ad871a8d.woff") format("woff"), url("//db.onlinewebfonts.com/t/a3250cbb026ddceeadb7c0e4ad871a8d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a3250cbb026ddceeadb7c0e4ad871a8d.svg#Mulled Wine Season Medium") format("svg");
+}
 * {
   margin: 0;
   padding: 0;
