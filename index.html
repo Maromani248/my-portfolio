@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Porfolio new</title>
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container" id="nav">
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="#home-section" class="nav-link" id="a-home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#aboutme-section" class="nav-link" id="a-aboutme">Acerca de mi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects-section" class="nav-link" id="a-project">Projectos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-section" class="nav-link" id="a-contact">Contacto</a>
+                </li>
+            </ul>
+
+            <a href="#nav" class="nav-hamburguer">
+                <img src="/image/menu.png" alt="menu" class="nav-icon">
+            </a>
+            <a href="#" class="nav-close">
+                <img src="/image/cruz.png" alt="cerrar" class="nav-icon">
+            </a>
+        </nav>
+    </header>
+
+
+    <main class="main-container">
+        <!-- HOME -->
+        <section class="home-section">
+            <h1 class="home-title">
+                <span class="type-1" id="row-1">Hey, there</span></br>
+                <span class="type-2" id="row-2">I'm</span></br>
+                <span class="type-1" id="row-3">María Antonieta</span>
+            </h1>
+            <div class="home-button-grid">
+                <button class="button-home" id="acerca-de-mi">Acerca de mi</button>
+                <button class="button-home" id="proyectos">Proyectos</button>
+                <button class="button-home" id="contacto">Contacto</button>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section class="aboutme-section">
+            <div class="aboutme-container">
+                <h1 class="aboutme-title">About me</h1>
+                <div class="aboutme-info">
+                    <p class="aboutme-description">
+                        Soy de Argentina y tengo 24 años. Soy estudiante de la carrera Ingeniería en Informática desde 2016 en la
+                        Universidad
+                        Nacional del Litoral. Hace un poco más de un año, descubrí el mundo del desarrollo web y el Frontend me
+                        encantó. Por
+                        eso, empecé a hacer cursos online y a seguir cuentas en redes sociales referido al tema. Ahora estoy en
+                        busca de
+                        experiencia para aprender del mundo real.
+                    </p>
+                    <p class="aboutme-description">
+                        Quiero ser parte de proyectos de los que las personas utilicen en su día a día ya sea para mejorar la
+                        experiencia al
+                        hacer algún trámite, contribuir para negocios o simplemente pasar el rato.
+                    </p>
+                    <p class="aboutme-description">
+                        Además de la tecnología, siempre me gustó ponerle color y estilo a las cosas. Desde la secundaria, me dedico
+                        a hacer
+                        flyers para las redes sociales, especialemente para el negocio de mis papás. Me encanta personalizar todo,
+                        es la
+                        verdad.
+                    </p>
+                    <p class="aboutme-description">
+                        Aquí te comparto mi curriculum y mi LinkedIn.
+                    </p>
+                </div>
+                <div class="aboutme-button-grid">
+                    <a class="button-aboutme" id="acerca-de-mi" href="/files_extras/María Antonieta Romani - CV-1.pdf" target="_blank">Curriculum</a>
+                    <a class="button-aboutme" id="proyectos" href="https://www.linkedin.com/in/maromani/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects-section">
+            <div class="projects-container">
+                <h1 class="projects-title">Projectos</h1>
+                <div class="projects-grid">
+                    <a href="#">
+                        <img class="project-img" src="/image/1.png" alt="projecto1">
+                    </a>
+                    <a href="#">
+                        <img class="project-img" src="/image/2.png" alt="projecto1">
+                    </a>
+                    <a href="#">
+                        <img class="project-img" src="/image/3.png" alt="projecto1">
+                    </a>
+                </div>
+                <div class="projects-container-footer">
+                    <p class="projects-legend">Si querés ver más projectos, te invito a que visites mi Github.</p>
+                    <a href="https://github.com/Maromani248">
+                        <img class="logo-github" src="/design/github.png" alt="github">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <h1 class="contact-title">Contacto</h1>
+                
+                <form class="contact-form" action="">
+                    <label class="contact-label" for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="input-name" class="contact-input">
+                    <div class="form-name-error error"></div>
+                
+                    <label class="contact-label" for="email">Email</label>
+                    <input type="email" name="email" id="input-email" class="contact-input">
+                    <div class="form-email-error error"></div>
+                
+                    <label class="contact-label" for="mensaje">Mensaje</label>
+                    <input type="text" name="mensaje" id="input-mensaje" class="contact-input">
+                    <div class="form-message-error error"></div>
+
+                    <input type="submit" name="enviar" id="input-submit" class="button-contact" value="Enviar mensaje">
+                </form>
+                
+            </div>
+        </section>
+
+        <!-- THANKS CONTACT -->
+        <section class="thanks-contact-section">
+            <div class="contact-container">
+                <h1 class="contact-title">Contacto</h1>
+                <div class="thanks-container">
+                    <p class="thanks-msn">Gracias por enviar tu mensaje</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="/mainPortfolio.js"></script>
+</body>
+</html>
