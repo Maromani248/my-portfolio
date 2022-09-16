@@ -103,7 +103,7 @@ body {
   width: 375px;
 }
 .main-container .home-section {
-  display: none;
+  display: block;
 }
 .main-container .aboutme-section {
   display: none;
@@ -112,7 +112,7 @@ body {
   display: none;
 }
 .main-container .contact-section {
-  display: block;
+  display: none;
 }
 .main-container .thanks-contact-section {
   display: none;
