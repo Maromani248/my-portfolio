@@ -10,7 +10,7 @@ let nameInput = document.querySelector("#input-name");
 let nameErrorDiv = document.querySelector(".form-name-error");
 let emailInput = document.querySelector("#input-email");
 let emailErrorDiv = document.querySelector(".form-email-error");
-let messageInput = document.querySelector("#input-mensaje");
+let messageInput = document.querySelector("#textarea-mensaje");
 let messageErrorDiv = document.querySelector(".form-message-error");
 
 // BUTTONS 
@@ -82,7 +82,7 @@ menuContactButton.addEventListener("click", (event) => {
 
 
 // CONTACT
-let confirmButton = document.querySelector('.button-contact');
+/* let confirmButton = document.querySelector('.button-contact');
 
 let nameValidation = false;
 let emailValidation = false;
@@ -93,10 +93,10 @@ let formSection = document.querySelector(".contact-form");
 let thanksSection = document.querySelector('.thanks-contact-section');
 
 confirmButton.addEventListener('click', event=>{
-  event.preventDefault();
+  event.preventDefault(); */
 
   // Validar nombre
-  if (verifyIsFilled(nameInput, nameErrorDiv)) {
+  /* if (verifyIsFilled(nameInput, nameErrorDiv)) {
     nameValidation = true;
   } else {
     nameValidation = false;
@@ -120,10 +120,10 @@ confirmButton.addEventListener('click', event=>{
     formSection.style.display = "none";
     thanksSection.style.display = "block";
   }
-})
+}) */
 
 // FUNTIONS
-function showError(divInput, divError, msgError, show = true) {
+/* function showError(divInput, divError, msgError, show = true) {
   if (show) {
     divError.innerText = msgError;
     divInput.style.borderColor = "#d1495b";
@@ -141,4 +141,4 @@ function verifyIsFilled(divInput, divError) {
     showError(divInput, divError, "No puede estar vacío");
     return false;
   }
-}
+} */

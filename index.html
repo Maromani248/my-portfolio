@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-<link href="//db.onlinewebfonts.com/c/a3250cbb026ddceeadb7c0e4ad871a8d?family=Mulled+Wine+Season+Medium"
-    rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="main.css">
+    <link href="//db.onlinewebfonts.com/c/a3250cbb026ddceeadb7c0e4ad871a8d?family=Mulled+Wine+Season+Medium"
+        rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/image/logo.png" />
 
     <title>Porfolio new</title>
 </head>
+
 <body>
     <header class="hero">
         <nav class="nav container" id="nav">
@@ -59,23 +62,29 @@
                 <h1 class="aboutme-title">About me</h1>
                 <div class="aboutme-info">
                     <p class="aboutme-description">
-                        Soy de Argentina y tengo 24 años. Soy estudiante de la carrera Ingeniería en Informática desde 2016 en la
+                        Soy de Argentina y tengo 24 años. Soy estudiante de la carrera Ingeniería en Informática desde
+                        2016 en la
                         Universidad
-                        Nacional del Litoral. Hace un poco más de un año, descubrí el mundo del desarrollo web y el Frontend me
+                        Nacional del Litoral. Hace un poco más de un año, descubrí el mundo del desarrollo web y el
+                        Frontend me
                         encantó. Por
-                        eso, empecé a hacer cursos online y a seguir cuentas en redes sociales referido al tema. Ahora estoy en
+                        eso, empecé a hacer cursos online y a seguir cuentas en redes sociales referido al tema. Ahora
+                        estoy en
                         busca de
                         experiencia para aprender del mundo real.
                     </p>
                     <p class="aboutme-description">
-                        Quiero ser parte de proyectos de los que las personas utilicen en su día a día ya sea para mejorar la
+                        Quiero ser parte de proyectos de los que las personas utilicen en su día a día ya sea para
+                        mejorar la
                         experiencia al
                         hacer algún trámite, contribuir para negocios o simplemente pasar el rato.
                     </p>
                     <p class="aboutme-description">
-                        Además de la tecnología, siempre me gustó ponerle color y estilo a las cosas. Desde la secundaria, me dedico
+                        Además de la tecnología, siempre me gustó ponerle color y estilo a las cosas. Desde la
+                        secundaria, me dedico
                         a hacer
-                        flyers para las redes sociales, especialemente para el negocio de mis papás. Me encanta personalizar todo,
+                        flyers para las redes sociales, especialemente para el negocio de mis papás. Me encanta
+                        personalizar todo,
                         es la
                         verdad.
                     </p>
@@ -84,8 +93,10 @@
                     </p>
                 </div>
                 <div class="aboutme-button-grid">
-                    <a class="button-aboutme" id="acerca-de-mi" href="/files_extras/María Antonieta Romani - CV-1.pdf" target="_blank">Curriculum</a>
-                    <a class="button-aboutme" id="proyectos" href="https://www.linkedin.com/in/maromani/" target="_blank">LinkedIn</a>
+                    <a class="button-aboutme" id="acerca-de-mi" href="/files_extras/María Antonieta Romani - CV-1.pdf"
+                        target="_blank">Curriculum</a>
+                    <a class="button-aboutme" id="proyectos" href="https://www.linkedin.com/in/maromani/"
+                        target="_blank">LinkedIn</a>
                 </div>
             </div>
         </section>
@@ -118,23 +129,23 @@
         <section class="contact-section">
             <div class="contact-container">
                 <h1 class="contact-title">Contacto</h1>
-                
-                <form class="contact-form" action="">
+
+                <form action="https://formsubmit.co/mariaantonietaromani@gmail.com" method="POST">
                     <label class="contact-label" for="nombre">Nombre</label>
                     <input type="text" name="nombre" id="input-name" class="contact-input">
                     <div class="form-name-error error"></div>
-                
+
                     <label class="contact-label" for="email">Email</label>
                     <input type="email" name="email" id="input-email" class="contact-input">
                     <div class="form-email-error error"></div>
-                
+
                     <label class="contact-label" for="mensaje">Mensaje</label>
-                    <input type="text" name="mensaje" id="input-mensaje" class="contact-input">
+                    <textarea name="mensaje" id="textarea-mensaje" class="contact-input" cols="30" rows="10"></textarea>
                     <div class="form-message-error error"></div>
 
-                    <input type="submit" name="enviar" id="input-submit" class="button-contact" value="Enviar mensaje">
+                    <button type="submit" id="input-submit" class="button-contact">Enviar mensaje</button>
                 </form>
-                
+
             </div>
         </section>
 
@@ -147,9 +158,24 @@
                 </div>
             </div>
         </section>
-        
+
     </main>
 
-    <script src="/mainPortfolio.js"></script>
+    <!-- src="/mainPortfolio.js" -->
+    <script src="/mainPortfolio.js">
+        /* const $form = document.querySelector('#form');
+        const $buttonMar = document.querySelector('#trucazo');
+
+        $form.addEventListener('submit', handleSubmit);
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = new FormData(this);
+            console.log(form.get('nombre'));
+            $buttonMar.setAttribute('href', `maromani:mariaantonietaromani@gmail.com?subject=${form.get('nombre')}${form.get('email')}&body=${form.get('mensaje')}`);
+            $buttonMar.click();  
+        } */
+    </script>
 </body>
+
 </html>

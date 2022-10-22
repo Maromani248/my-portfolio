@@ -196,7 +196,6 @@ a {
     font-family: variables.$font2;
     font-size: 15px;
     color: white;
-    /* color: variables.$crema; */
     background-color: variables.$celeste;
     padding: 7px 15px;
     border-radius: 20px;
@@ -442,7 +441,7 @@ a {
     }
 
     .button-contact {
-      left: 700px;
+      left: 400px;
     }
   }
 }
@@ -469,4 +468,8 @@ a {
     margin: -25px 0 20px;
     font-size: 0.8em;
     font-family: variables.$font2;
+
+    @media (min-width: 1440px){
+      margin-left: 20px;
+    }
 }
