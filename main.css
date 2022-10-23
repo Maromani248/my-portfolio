@@ -109,7 +109,7 @@ body {
   width: 375px;
 }
 .main-container .home-section {
-  display: none;
+  display: block;
 }
 .main-container .aboutme-section {
   display: none;
@@ -118,7 +118,7 @@ body {
   display: none;
 }
 .main-container .contact-section {
-  display: block;
+  display: none;
 }
 .main-container .thanks-contact-section {
   display: none;
@@ -527,9 +527,14 @@ a {
   font-size: 0.8em;
   font-family: "Mulled Wine Season Medium";
 }
+@media (min-width: 768px) {
+  .error {
+    margin-left: 6px;
+  }
+}
 @media (min-width: 1440px) {
   .error {
-    margin-left: 20px;
+    margin-left: 15px;
   }
 }
 
