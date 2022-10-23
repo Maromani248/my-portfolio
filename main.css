@@ -52,6 +52,7 @@ body {
   grid-column: -2/-1;
   grid-row: 1/2;
   transition: 0.4 transform;
+  padding: 5px;
 }
 
 .nav-hamburguer {
@@ -108,7 +109,7 @@ body {
   width: 375px;
 }
 .main-container .home-section {
-  display: block;
+  display: none;
 }
 .main-container .aboutme-section {
   display: none;
@@ -117,7 +118,7 @@ body {
   display: none;
 }
 .main-container .contact-section {
-  display: none;
+  display: block;
 }
 .main-container .thanks-contact-section {
   display: none;
@@ -158,6 +159,27 @@ a {
   position: absolute;
   top: 40px;
   left: 142px;
+}
+@media (min-width: 768px) {
+  .home-title {
+    top: 50px;
+    left: 30px;
+    width: 700px;
+  }
+  .home-title #row-1 {
+    font-size: 1.7em;
+    left: 200px;
+  }
+  .home-title #row-2 {
+    font-size: 1.2em;
+    top: 35px;
+    left: 322px;
+  }
+  .home-title #row-3 {
+    font-size: 1.6em;
+    top: 52px;
+    left: 230px;
+  }
 }
 @media (min-width: 1440px) {
   .home-title {
@@ -202,6 +224,17 @@ a {
 .home-button-grid .button-home:hover, .home-button-grid .aboutme-container .button-aboutme:hover, .aboutme-container .home-button-grid .button-aboutme:hover, .aboutme-container .aboutme-button-grid .button-home:hover, .aboutme-container .aboutme-button-grid .button-aboutme:hover {
   background-color: #003049;
 }
+@media (min-width: 768px) {
+  .home-button-grid, .aboutme-container .aboutme-button-grid {
+    top: 370px;
+    left: 310px;
+  }
+  .home-button-grid .button-home, .home-button-grid .aboutme-container .button-aboutme, .aboutme-container .home-button-grid .button-aboutme, .aboutme-container .aboutme-button-grid .button-home, .aboutme-container .aboutme-button-grid .button-aboutme {
+    font-size: 18px;
+    padding: 12px 52px;
+    border-radius: 30px;
+  }
+}
 @media (min-width: 1440px) {
   .home-button-grid, .aboutme-container .aboutme-button-grid {
     top: 370px;
@@ -236,6 +269,28 @@ a {
 .aboutme-container .aboutme-button-grid {
   top: 450px;
   left: 100px;
+}
+@media (min-width: 768px) {
+  .aboutme-container {
+    left: 130px;
+    width: 70vw;
+  }
+  .aboutme-container .aboutme-title {
+    font-size: 30px;
+  }
+  .aboutme-container .aboutme-description {
+    font-size: 13px;
+    padding: 0 20px;
+  }
+  .aboutme-container .aboutme-button-grid {
+    display: flex;
+    position: relative;
+    top: 25px;
+    left: 30px;
+  }
+  .aboutme-container .button-aboutme {
+    margin: 0 10px;
+  }
 }
 @media (min-width: 1440px) {
   .aboutme-container {
@@ -301,6 +356,37 @@ a {
 .projects-container .logo-github {
   width: 55px;
   margin-left: 160px;
+}
+@media (min-width: 768px) {
+  .projects-container {
+    left: 130px;
+    width: 70vw;
+  }
+  .projects-container .projects-title {
+    font-size: 30px;
+  }
+  .projects-container .projects-legend {
+    font-size: 15px;
+    padding: 0 15px;
+  }
+  .projects-container .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    top: 85px;
+    left: 0;
+  }
+  .projects-container .project-img {
+    width: 180px;
+  }
+  .projects-container .projects-container-footer {
+    display: flex;
+    align-items: center;
+    left: 40px;
+    top: 320px;
+  }
+  .projects-container .logo-github {
+    margin-left: 0;
+  }
 }
 @media (min-width: 1440px) {
   .projects-container {
@@ -380,7 +466,26 @@ a {
   border-style: none;
   cursor: pointer;
   position: relative;
-  left: 50px;
+  left: 70px;
+}
+@media (min-width: 768px) {
+  .contact-container {
+    left: 130px;
+    width: 70vw;
+  }
+  .contact-container .contact-title {
+    font-size: 30px;
+  }
+  .contact-container .contact-label {
+    font-size: 15px;
+    padding: 0 5px;
+  }
+  .contact-container .contact-input {
+    margin-left: 5px;
+  }
+  .contact-container .button-contact {
+    left: 365px;
+  }
 }
 @media (min-width: 1440px) {
   .contact-container {
