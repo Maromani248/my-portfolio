@@ -256,8 +256,8 @@ a {
 
 /********************************************************************/
 .aboutme-container {
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: 150px;
   left: 110px;
 }
 .aboutme-container .aboutme-title {
@@ -271,11 +271,11 @@ a {
   color: #003049;
   font-size: 12px;
   padding: 0 15px;
-  width: 85%;
+  width: 60vw;
 }
 .aboutme-container .aboutme-button-grid {
-  top: 450px;
-  left: 100px;
+  top: 600px;
+  left: 85px;
 }
 .aboutme-container .button-aboutme {
   text-align: center;
@@ -324,9 +324,9 @@ a {
 
 /********************************************************************/
 .projects-container {
-  position: relative;
-  top: 0;
-  left: 85px;
+  position: absolute;
+  top: 150px;
+  left: 110px;
 }
 .projects-container .projects-title {
   font-family: "Shrikhand", cursive;
@@ -341,7 +341,7 @@ a {
   row-gap: 8px;
   position: absolute;
   top: 8px;
-  left: 75px;
+  left: 45px;
   padding: 50px;
 }
 .projects-container .project-img {
@@ -433,7 +433,7 @@ a {
 .contact-container {
   position: absolute;
   top: 150px;
-  left: 85px;
+  left: 110px;
 }
 .contact-container .contact-title {
   font-family: "Shrikhand", cursive;

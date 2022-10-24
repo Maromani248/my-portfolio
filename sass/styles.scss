@@ -265,8 +265,8 @@ a {
 
 // SECTION ABOUT ME
 .aboutme-container {
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: 150px;
   left: 110px;
 
   .aboutme-title {
@@ -281,13 +281,13 @@ a {
     color: variables.$blue;
     font-size: 12px;
     padding: 0 15px;
-    width: 85%;
+    width: 60vw;
   }
 
   .aboutme-button-grid {
     @extend .home-button-grid;
-    top: 450px;
-    left: 100px;
+    top: 600px;
+    left: 85px;
   }
 
   .button-aboutme {
@@ -347,9 +347,9 @@ a {
 
 // SECTION PROJECTS
 .projects-container {
-  position: relative;
-  top: 0;
-  left: 85px;
+  position: absolute;
+  top: 150px;
+  left: 110px;
 
   .projects-title {
     font-family: variables.$font1;
@@ -365,7 +365,7 @@ a {
     row-gap: 8px;
     position: absolute;
     top: 8px;
-    left: 75px;
+    left: 45px;
     padding: 50px;
   }
 
@@ -475,7 +475,7 @@ a {
 .contact-container {
   position: absolute;
   top: 150px;
-  left: 85px;
+  left: 110px;
 
   .contact-title {
     font-family: variables.$font1;
