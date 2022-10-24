@@ -24,7 +24,7 @@ body {
 /********************************************************************/
 .container {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   overflow: hidden;
 }
@@ -58,11 +58,18 @@ body {
 .nav-hamburguer {
   transform: var(--state-hamburguer);
   z-index: 1;
+  margin-right: 30px;
 }
 
 .nav-close {
   transform: var(--state-close);
   z-index: 1;
+  margin-right: 30px;
+}
+
+.nav-back {
+  display: none;
+  margin-left: 120px;
 }
 
 .nav-icon {

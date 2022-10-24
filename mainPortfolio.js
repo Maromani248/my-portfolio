@@ -5,6 +5,8 @@ let projectsSection = document.querySelector(".projects-section");
 let contactSection = document.querySelector(".contact-section");
 let thanksContactSection = document.querySelector(".thanks-contact-section");
 
+let backButton = document.querySelector(".nav-back");
+
 // FORM 
 let nameInput = document.querySelector("#input-name");
 let nameErrorDiv = document.querySelector(".form-name-error");
@@ -28,18 +30,21 @@ aboutmeButton.addEventListener('click', event=>{
     event.preventDefault();
     homeSection.style.display = 'none';
     aboutmeSection.style.display = 'block';
+    backButton.style.display = 'block';
 });
 
 projectsButton.addEventListener("click", event=> {
   event.preventDefault();
   homeSection.style.display = "none";
   projectsSection.style.display = "block";
+  backButton.style.display = "block";
 });
 
 contactButton.addEventListener("click", event=> {
   event.preventDefault();
   homeSection.style.display = "none";
   contactSection.style.display = "block";
+  backButton.style.display = "block";
 });
 
 
@@ -49,6 +54,7 @@ menuHomeButton.addEventListener("click", (event) => {
   projectsSection.style.display = "none";
   contactSection.style.display = "none";
   thanksContactSection.style.display = "none";
+  backButton.style.display = "none";
 
   homeSection.style.display = "block";
 });
@@ -79,6 +85,14 @@ menuContactButton.addEventListener("click", (event) => {
   
   contactSection.style.display = "block";
 });
+
+backButton.addEventListener("click", (event) => {
+  homeSection.style.display = "block";
+  backButton.style.visibility = "hidden";
+  projectsSection.style.display = "none";
+  aboutmeSection.style.display = "none";
+  contactSection.style.display = "none";
+})
 
 
 // CONTACT
