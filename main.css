@@ -257,7 +257,7 @@ a {
 /********************************************************************/
 .aboutme-container {
   position: absolute;
-  top: 150px;
+  top: 130px;
   left: 110px;
 }
 .aboutme-container .aboutme-title {
@@ -274,8 +274,9 @@ a {
   width: 60vw;
 }
 .aboutme-container .aboutme-button-grid {
-  top: 600px;
+  top: 500px;
   left: 85px;
+  row-gap: 10px;
 }
 .aboutme-container .button-aboutme {
   text-align: center;
@@ -325,7 +326,7 @@ a {
 /********************************************************************/
 .projects-container {
   position: absolute;
-  top: 150px;
+  top: 130px;
   left: 110px;
 }
 .projects-container .projects-title {
@@ -365,7 +366,7 @@ a {
 }
 .projects-container .logo-github {
   width: 55px;
-  margin-left: 160px;
+  margin-left: 140px;
 }
 @media (min-width: 768px) {
   .projects-container {
@@ -408,7 +409,7 @@ a {
   }
   .projects-container .projects-legend {
     font-size: 18px;
-    padding: 0 15px;
+    padding: 90px 15px 0 15px;
   }
   .projects-container .projects-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -426,13 +427,14 @@ a {
   }
   .projects-container .logo-github {
     margin-left: 0;
+    margin-top: 90px;
   }
 }
 
 /********************************************************************/
 .contact-container {
   position: absolute;
-  top: 150px;
+  top: 130px;
   left: 110px;
 }
 .contact-container .contact-title {

@@ -266,7 +266,7 @@ a {
 // SECTION ABOUT ME
 .aboutme-container {
   position: absolute;
-  top: 150px;
+  top: 130px;
   left: 110px;
 
   .aboutme-title {
@@ -286,8 +286,9 @@ a {
 
   .aboutme-button-grid {
     @extend .home-button-grid;
-    top: 600px;
+    top: 500px;
     left: 85px;
+    row-gap: 10px;
   }
 
   .button-aboutme {
@@ -348,7 +349,7 @@ a {
 // SECTION PROJECTS
 .projects-container {
   position: absolute;
-  top: 150px;
+  top: 130px;
   left: 110px;
 
   .projects-title {
@@ -394,7 +395,7 @@ a {
 
   .logo-github {
     width: 55px;
-    margin-left: 160px;
+    margin-left: 140px;
   }
 
   @media (min-width: 768px) {
@@ -443,7 +444,7 @@ a {
 
     .projects-legend {
       font-size: 18px;
-      padding: 0 15px;
+      padding: 90px 15px 0 15px;
     }
 
     .projects-grid {
@@ -465,6 +466,7 @@ a {
 
     .logo-github {
       margin-left: 0;
+      margin-top: 90px;
     }
   }
 }
@@ -474,7 +476,7 @@ a {
 
 .contact-container {
   position: absolute;
-  top: 150px;
+  top: 130px;
   left: 110px;
 
   .contact-title {
