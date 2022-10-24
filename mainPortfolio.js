@@ -31,6 +31,7 @@ aboutmeButton.addEventListener('click', event=>{
     homeSection.style.display = 'none';
     aboutmeSection.style.display = 'block';
     backButton.style.display = 'block';
+    backButton.style.visibility = 'visible';
 });
 
 projectsButton.addEventListener("click", event=> {
@@ -38,6 +39,7 @@ projectsButton.addEventListener("click", event=> {
   homeSection.style.display = "none";
   projectsSection.style.display = "block";
   backButton.style.display = "block";
+  backButton.style.visibility = "visible";
 });
 
 contactButton.addEventListener("click", event=> {
@@ -45,6 +47,15 @@ contactButton.addEventListener("click", event=> {
   homeSection.style.display = "none";
   contactSection.style.display = "block";
   backButton.style.display = "block";
+  backButton.style.visibility = "visible";
+});
+
+backButton.addEventListener("click", (event) => {
+  homeSection.style.display = "block";
+  backButton.style.visibility = "hidden";
+  projectsSection.style.display = "none";
+  aboutmeSection.style.display = "none";
+  contactSection.style.display = "none";
 });
 
 
@@ -85,14 +96,6 @@ menuContactButton.addEventListener("click", (event) => {
   
   contactSection.style.display = "block";
 });
-
-backButton.addEventListener("click", (event) => {
-  homeSection.style.display = "block";
-  backButton.style.visibility = "hidden";
-  projectsSection.style.display = "none";
-  aboutmeSection.style.display = "none";
-  contactSection.style.display = "none";
-})
 
 
 // CONTACT

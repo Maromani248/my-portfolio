@@ -292,6 +292,7 @@ a {
 
   .button-aboutme {
     @extend .button-home;
+    text-align: center;
   }
 
   @media (min-width: 768px) {

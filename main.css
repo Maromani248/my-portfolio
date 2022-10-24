@@ -277,6 +277,9 @@ a {
   top: 450px;
   left: 100px;
 }
+.aboutme-container .button-aboutme {
+  text-align: center;
+}
 @media (min-width: 768px) {
   .aboutme-container {
     left: 130px;
