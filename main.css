@@ -72,6 +72,10 @@ body {
   margin-left: 120px;
 }
 
+.nav-back:hover {
+  opacity: 50%;
+}
+
 .nav-icon {
   width: 50px;
 }
@@ -413,6 +417,9 @@ a {
 .projects-container .logo-github {
   width: 55px;
   margin-left: 150px;
+}
+.projects-container .logo-github:hover {
+  opacity: 50%;
 }
 @media (min-width: 1440px) {
   .projects-container {

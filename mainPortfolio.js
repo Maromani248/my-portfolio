@@ -76,6 +76,7 @@ menuAboutmeButton.addEventListener("click", (event) => {
   contactSection.style.display = "none";
   thanksContactSection.style.display = "none";
 
+  backButton.style.display = "block";
   aboutmeSection.style.display = "block";
 });
 
@@ -85,6 +86,7 @@ menuProjectButton.addEventListener("click", (event) => {
   aboutmeSection.style.display = "none";
   thanksContactSection.style.display = "none";
 
+  backButton.style.display = "block";
   projectsSection.style.display = "block";
 });
 
@@ -94,6 +96,7 @@ menuContactButton.addEventListener("click", (event) => {
   aboutmeSection.style.display = "none";
   thanksContactSection.style.display = "none";
   
+  backButton.style.display = "block";
   contactSection.style.display = "block";
 });
 
