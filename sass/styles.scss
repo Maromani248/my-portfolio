@@ -236,6 +236,7 @@ a {
     border-radius: 20px;
     border-style: none;
     cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   }
 
   .button-home:hover {
@@ -290,9 +291,9 @@ a {
 
   .aboutme-button-grid {
     @extend .home-button-grid;
-    top: 590px;
+    top: 550px;
     left: 85px;
-    row-gap: 10px;
+    row-gap: 15px;
   }
 
   .button-aboutme {
@@ -489,7 +490,7 @@ a {
 
     .button-project {
       padding: 15px 30px;
-    } 
+    }
 
     .projects-container-footer {
       display: flex;
@@ -546,12 +547,16 @@ a {
     color: variables.$blue;
   }
 
+  #textarea-mensaje {
+    height: 200px;
+  }
+
   #input-mensaje {
     height: 200px;
   }
 
-  .button-contact {
-    /* @extend .button-aboutme; */
+ /*  .button-contact {
+    // @extend .button-aboutme;
     font-family: variables.$font2;
     font-size: 15px;
     color: white;
@@ -565,6 +570,23 @@ a {
   }
 
   .button-contact:hover {
+    background-color: variables.$blue;
+  } */
+
+  .btn-block {
+    font-family: variables.$font2;
+    font-size: 15px;
+    color: white;
+    background-color: variables.$celeste;
+    padding: 7px 15px;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+    position: relative;
+    left: 70px;
+  }
+
+  .btn-block:hover {
     background-color: variables.$blue;
   }
 
@@ -585,7 +607,11 @@ a {
       margin-left: 5px;
     }
 
-    .button-contact {
+    /* .button-contact {
+      left: 365px;
+    } */
+    
+    .btn-block {
       left: 365px;
     }
   }
@@ -607,7 +633,11 @@ a {
       margin-left: 15px;
     }
 
-    .button-contact {
+    /* .button-contact {
+      left: 400px;
+    } */
+    
+    .btn-block {
       left: 400px;
     }
   }

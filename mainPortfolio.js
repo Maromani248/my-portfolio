@@ -56,6 +56,7 @@ backButton.addEventListener("click", (event) => {
   projectsSection.style.display = "none";
   aboutmeSection.style.display = "none";
   contactSection.style.display = "none";
+  thanksSection.style.display = "none";
 });
 
 
@@ -138,7 +139,10 @@ confirmButton.addEventListener('click', event=>{
 
   if (nameValidation == true && emailValidation == true && messageValidation == true) {
     formSection.style.display = "none";
+
+    backButton.style.display = "block";
     thanksSection.style.display = "block";
+    /* location.reload(Math.random()*3); */
   }
 })
 

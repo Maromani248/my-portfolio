@@ -159,7 +159,23 @@
             <div class="contact-container">
                 <h1 class="contact-title">Contacto</h1>
 
-                <form action="https://formsubmit.co/mariaantonietaromani@gmail.com" method="POST" class="contact-form">
+                <form target="_blank" action="https://formsubmit.co/mariaantonietaromani@gmail.com" method="POST">
+                    <label class="contact-label" for="nombre">Nombre</label>
+                    <input type="text" name="nombre" class="contact-input" id="input-name" placeholder="Full Name">
+                    <div class="form-name-error error"></div>
+
+                    <label class="contact-label" for="email">Email</label>
+                    <input type="email" name="email" class="contact-input" id="input-email" placeholder="Email Address">
+                    <div class="form-email-error error"></div>
+                
+                    <label class="contact-label" for="mensaje">Mensaje</label>
+                    <textarea placeholder="Your Message" class="contact-input" id="textarea-mensaje" name="mensaje" rows="10"></textarea>
+                    <div class="form-message-error error"></div>
+
+                    <button type="submit" class="btn btn-lg btn-dark btn-block" >Submit Form</button>
+                </form>
+
+                <!-- <form target="_blank" action="https://formsubmit.co/1f489dac000486f0a76c54f74835d629" method="POST">
                     <label class="contact-label" for="nombre">Nombre</label>
                     <input type="text" name="nombre" id="input-name" class="contact-input">
                     <div class="form-name-error error"></div>
@@ -169,11 +185,11 @@
                     <div class="form-email-error error"></div>
 
                     <label class="contact-label" for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="textarea-mensaje" class="contact-input" cols="30" rows="10"></textarea>
+                    <textarea name="mensaje" id="textarea-mensaje" class="contact-input" rows="10"></textarea>
                     <div class="form-message-error error"></div>
 
                     <button type="submit" id="input-submit" class="button-contact">Enviar mensaje</button>
-                </form>
+                </form>  -->
 
             </div>
         </section>

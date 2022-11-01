@@ -231,6 +231,7 @@ a {
   border-radius: 20px;
   border-style: none;
   cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 .home-button-grid .button-home:hover, .home-button-grid .aboutme-container .button-aboutme:hover, .aboutme-container .home-button-grid .button-aboutme:hover, .aboutme-container .aboutme-button-grid .button-home:hover, .aboutme-container .aboutme-button-grid .button-aboutme:hover {
   background-color: #003049;
@@ -278,9 +279,9 @@ a {
   width: 60vw;
 }
 .aboutme-container .aboutme-button-grid {
-  top: 590px;
+  top: 550px;
   left: 85px;
-  row-gap: 10px;
+  row-gap: 15px;
 }
 .aboutme-container .button-aboutme {
   text-align: center;
@@ -465,6 +466,23 @@ a {
   position: absolute;
   top: 130px;
   left: 110px;
+  /*  .button-contact {
+     // @extend .button-aboutme;
+     font-family: variables.$font2;
+     font-size: 15px;
+     color: white;
+     background-color: variables.$celeste;
+     padding: 7px 15px;
+     border-radius: 20px;
+     border-style: none;
+     cursor: pointer;
+     position: relative;
+     left: 70px;
+   }
+
+   .button-contact:hover {
+     background-color: variables.$blue;
+   } */
 }
 .contact-container .contact-title {
   font-family: "Shrikhand", cursive;
@@ -493,11 +511,13 @@ a {
   font-family: "Mulled Wine Season Medium";
   color: #003049;
 }
+.contact-container #textarea-mensaje {
+  height: 200px;
+}
 .contact-container #input-mensaje {
   height: 200px;
 }
-.contact-container .button-contact {
-  /* @extend .button-aboutme; */
+.contact-container .btn-block {
   font-family: "Mulled Wine Season Medium";
   font-size: 15px;
   color: white;
@@ -509,13 +529,16 @@ a {
   position: relative;
   left: 70px;
 }
-.contact-container .button-contact:hover {
+.contact-container .btn-block:hover {
   background-color: #003049;
 }
 @media (min-width: 768px) {
   .contact-container {
     left: 130px;
     width: 70vw;
+    /* .button-contact {
+      left: 365px;
+    } */
   }
   .contact-container .contact-title {
     font-size: 30px;
@@ -527,7 +550,7 @@ a {
   .contact-container .contact-input {
     margin-left: 5px;
   }
-  .contact-container .button-contact {
+  .contact-container .btn-block {
     left: 365px;
   }
 }
@@ -535,6 +558,9 @@ a {
   .contact-container {
     left: 400px;
     width: 60vw;
+    /* .button-contact {
+      left: 400px;
+    } */
   }
   .contact-container .contact-title {
     font-size: 35px;
@@ -546,7 +572,7 @@ a {
   .contact-container .contact-input {
     margin-left: 15px;
   }
-  .contact-container .button-contact {
+  .contact-container .btn-block {
     left: 400px;
   }
 }
